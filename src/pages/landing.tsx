@@ -60,7 +60,7 @@ const Landing = () => {
               officia reprehenderit pariatur quia minus. Illum nihil nostrum
               ducimus dolores debitis necessitatibus omnis dicta neque hic
               possimus, unde quo.{" "}
-              <p>
+              <p className="next">
                 Perferendis nisi amet veniam magni praesentium, libero impedit
                 possimus aspernatur unde corporis illo! Ipsa aliquid voluptatum
                 consequatur nulla aut quia. Amet, pariatur! Soluta quibusdam,
@@ -75,7 +75,9 @@ const Landing = () => {
           </div>
         </section>
         <section id="hero-3">
-          <h1>Our Vertical</h1>
+          <h1>
+            Our <span>Vertical</span>
+          </h1>
           <div className="flex-box">
             <div className="block-1">
               <img src="" alt="topimg" />
