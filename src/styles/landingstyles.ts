@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyleProps } from "../interface/props";
+// import { StyleProps } from "../interface/props";
 
 export const TopNav = styled.div`
   display: flex;

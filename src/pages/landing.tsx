@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/landing.scss";
 import bg from "../images/bg.webp";
-import { TopNav, Hero, Button } from "../styles/landingstyles";
+import { Hero, Button } from "../styles/landingstyles";
 import circuit1 from "../images/circuit 1.webp";
 import group6 from "../images/Group 6.webp";
 import group5 from "../images/Group 5.webp";
@@ -12,10 +12,9 @@ import babs from "../images/babs.webp";
 import block from "../images/block.webp";
 import center from "../images/center.webp";
 
-const menu = ["About Us", "WebATL", "Accelerator", "Blog", "Contact"];
 const Landing = () => {
-  const colNum: string = "10";
-  const rollNum: string = "20";
+  //   const colNum: string = "10";
+  //   const rollNum: string = "20";
   return (
     <div className="container">
       <img src={bg} className="bg" alt="background" />
