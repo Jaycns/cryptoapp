@@ -1,11 +1,16 @@
 import React from "react";
 import "../styles/landing.scss";
 import bg from "../images/bg.webp";
-import logo from "../images/Logo.webp";
-import { TopNav } from "../styles/landingstyles";
+import { TopNav, Hero, Button } from "../styles/landingstyles";
 import circuit1 from "../images/circuit 1.webp";
 import group6 from "../images/Group 6.webp";
 import group5 from "../images/Group 5.webp";
+import hat from "../images/hats.webp";
+import building from "../images/building.webp";
+import TopBar from "../components/ball";
+import babs from "../images/babs.webp";
+import block from "../images/block.webp";
+import center from "../images/center.webp";
 
 const menu = ["About Us", "WebATL", "Accelerator", "Blog", "Contact"];
 const Landing = () => {
@@ -19,16 +24,7 @@ const Landing = () => {
 
       <div className="margin-box">
         <section id="header">
-          <TopNav>
-            <img src={logo} alt="logo" />
-            <div className="menu">
-              {menu.map((item, index) => (
-                <p className="menuitem" key={index} id={item}>
-                  {item}
-                </p>
-              ))}
-            </div>
-          </TopNav>
+          <TopBar />
           <main>
             <div className="text">
               <h1>Build Inform Advance</h1>
@@ -38,9 +34,9 @@ const Landing = () => {
                 consequuntur aliquam iusto. Porro, quisquam.
               </p>
               <form>
-                <div className="btn">
+                <Button>
                   <p>Apply For Accelerator</p>
-                </div>
+                </Button>
                 <div className="input-box">
                   <input type="text" />
                 </div>
@@ -49,7 +45,7 @@ const Landing = () => {
             <img src={circuit1} alt="animated block" />
           </main>
         </section>
-        <section id="hero-2">
+        <Hero>
           <img src={group6} className="circuit" alt="cloudatron" />
           <div className="text">
             <h1>
@@ -69,110 +65,121 @@ const Landing = () => {
                 praesentium animi earum doloribus? Quidem.
               </p>
             </p>
-            <div className="btn">
+            <Button className="btn">
               <p>View Detail</p>
-            </div>
+            </Button>
           </div>
-        </section>
+        </Hero>
         <section id="hero-3">
           <h1>
             Our <span>Vertical</span>
           </h1>
           <div className="flex-box">
             <div className="block-1">
-              <img src="" alt="topimg" />
+              <img src={hat} className="hats" alt="topimg" />
               <h3>Education</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perspiciatis, possimus. Natus accusamus non blanditiis a
                 laudantium consectetur consequuntur! Nam, vero?
               </p>
-              <div className="btn">
+              <Button className="btn">
                 <p>Read More Detail</p>
-              </div>
+              </Button>
             </div>
             <div className="block-1">
-              <img src="" alt="topimg" />
+              <img src={building} className="hats" alt="topimg" />
               <h3>Governance</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perspiciatis, possimus. Natus accusamus non blanditiis a
                 laudantium consectetur consequuntur! Nam, vero?
               </p>
-              <div className="btn">
+              <Button className="btn">
                 <p>Read More Detail</p>
-              </div>
+              </Button>
             </div>
             <div className="block-1">
-              <img src="" alt="topimg" />
+              <img src={hat} className="hats" alt="topimg" />
               <h3>Education</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perspiciatis, possimus. Natus accusamus non blanditiis a
                 laudantium consectetur consequuntur! Nam, vero?
               </p>
-              <div className="btn">
+              <Button className="btn">
                 <p>Read More Detail</p>
-              </div>
+              </Button>
             </div>
             <div className="block-1">
-              <img src="" alt="topimg" />
-              <h3>GOvernance</h3>
+              <img src={building} className="hats" alt="topimg" />
+              <h3>Governance</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perspiciatis, possimus. Natus accusamus non blanditiis a
                 laudantium consectetur consequuntur! Nam, vero?
               </p>
-              <div className="btn">
+              <Button className="btn">
                 <p>Read More Detail</p>
-              </div>
+              </Button>
             </div>
           </div>
         </section>
-        <section>
-          <h1>Our Partners</h1>
+        <section id="hero-4">
+          <h1>
+            Our <span>Partners</span>
+          </h1>
           <div className="flex-box">
-            <img src="" alt="blockchain" />
-            <img src="" alt="blockchain" />
-            <img src="" alt="blockchain" />
-            <img src="" alt="blockchain" />
+            <img src={block} className="block" alt="blockchain" />
+            <img src={center} className="block center" alt="blockchain" />
+            <img src={babs} className="block babs" alt="blockchain" />
+            <img src={block} className="block" alt="blockchain" />
+            <img src={center} className="block center" alt="blockchain" />
           </div>
         </section>
-        <section>
-          <div className="flex-box">
-            <h1>How to use Web3ATL</h1>
+        <Hero>
+          <div className="text">
+            <h1>
+              How to use <span>Web3ATL</span>
+            </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               doloremque nobis accusamus qui a recusandae harum et praesentium
               consequatur tempora, minima, ducimus repellat aspernatur in illum,
-              voluptates dolores aperiam. Magni vero velit quisquam dignissimos
-              nihil quia quo voluptatibus saepe natus?
+              voluptates dolores aperiam.
+              <p className="next">
+                Magni vero velit quisquam dignissimos nihil quia quo
+                voluptatibus saepe natus? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Id deleniti dolor fugit eveniet cumque
+                corrupti repellat necessitatibus atque dolorem maxime!
+              </p>
             </p>
-            <div className="btn">
+            <Button className="btn">
               <p>View Details</p>
-            </div>
-            <img src="" alt="circuit-box" />
+            </Button>
           </div>
-        </section>
+          <img src={group6} alt="circuit-box" className="circuit" />
+        </Hero>
         <section id="contact-us">
-          <div className="flex-box">
-            <img src="" alt="circits" />
-            <div className="contact-box">
-              <form className="input-box">
+          <img src={group6} alt="circuit-box" className="circuit" />
+          <div className="contact-box">
+            <h1>Contact Us</h1>
+            <form>
+              <div className="input-box">
                 <input type="text" name="" id="" />
+              </div>
+              <div className="input-box">
                 <textarea name="" id="" cols={10} rows={20}></textarea>
-                <button type="submit">Submit</button>
-              </form>
-            </div>
+              </div>
+              {/* <button type="submit">Submit</button> */}
+              <Button className="btn">
+                <p>Submit</p>
+              </Button>
+            </form>
           </div>
         </section>
-        <footer id="footer">
-          <img src="" alt="logo" />
-          <div className="menu">
-            {menu.map((item) => (
-              <p className="">{item}</p>
-            ))}
-          </div>
+        <footer>
+          <TopBar />
         </footer>
       </div>
     </div>

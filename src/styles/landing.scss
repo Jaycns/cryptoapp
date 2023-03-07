@@ -51,8 +51,6 @@
         flex-direction: column;
         gap: 15px;
         .p {
-          font-size: 16px;
-          font-weight: 400;
           width: 444px;
           line-height: 24px;
         }
@@ -62,55 +60,121 @@
           margin-top: 15px;
 
           .input-box {
-            background: linear-gradient(92.32deg, #1f8ebe 0%, #ae61ed 99.4%);
-            border-radius: 8px;
             width: 192px;
-            padding: 1.5px;
             input {
-              background: rgba(4, 13, 33, 1);
-              border: none;
-              border-radius: 8px;
-              width: 100%;
-              height: 100%;
-              color: white;
-              outline: none;
-              padding: 12px;
+              background: rgb(8, 14, 32);
             }
           }
         }
       }
     }
   }
-  #hero-2 {
-    margin-top: 180px;
-    display: flex;
-    position: relative;
-    padding: 0 40px;
-    gap: 65px;
-    margin-bottom: 150px;
-    .circuit {
-      width: 553px;
-      height: 414px;
-    }
-    .text {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
 
-      p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
-      }
-      .next {
-        margin-top: 15px;
-      }
-    }
-  }
   #hero-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 0 15px;
+    gap: 140px;
+
+    .flex-box {
+      display: flex;
+      gap: 30px;
+
+      .block-1 {
+        display: flex;
+        flex-direction: column;
+        background: #131129;
+        border-radius: 10px;
+        padding: 36px 28px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+        position: relative;
+        .hats {
+          width: 238px;
+          height: 200px;
+          position: absolute;
+          margin: auto;
+          top: -24%;
+          right: 0;
+          left: 0;
+        }
+        h3 {
+          font-size: 24px;
+          font-weight: 600;
+          margin: 0;
+          margin-top: 50px;
+        }
+        .btn {
+          width: 100%;
+          margin-top: 15px;
+        }
+      }
+    }
   }
+  #hero-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    gap: 70px;
+    .flex-box {
+      display: flex;
+      gap: 50px;
+      .block {
+        width: 200px;
+        height: 100px;
+      }
+      .block.center {
+        width: 188px;
+        height: 87px;
+      }
+      .block.babs {
+        width: 281px;
+        height: 88px;
+      }
+    }
+  }
+}
+#contact-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 44px;
+  align-items: center;
+  .contact-box {
+    width: 514px;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      margin-bottom: 50px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .input-box {
+        width: 100%;
+        input,
+        textarea {
+          background: #000;
+        }
+        textarea {
+          height: 221px;
+          resize: none;
+        }
+      }
+      .btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+footer {
+  margin-top: 100px;
 }

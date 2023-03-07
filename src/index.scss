@@ -26,17 +26,6 @@ h1,
 p {
   margin: 0;
 }
-.btn {
-  background: linear-gradient(91.99deg, #1f8ebe 0%, #ae61ed 99.4%);
-  box-shadow: 0px 17px 33px rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  padding: 12px 24px;
-  width: fit-content;
-  p {
-    font-size: 14px !important;
-    font-weight: 600 !important;
-  }
-}
 h1 {
   font-weight: 800;
   font-size: 48px;
@@ -46,5 +35,31 @@ h1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+  }
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+.circuit {
+  width: 553px;
+  height: 414px;
+}
+.input-box {
+  background: linear-gradient(92.32deg, #1f8ebe 0%, #ae61ed 99.4%);
+  border-radius: 8px;
+  width: 100%;
+  padding: 1.5px;
+  input,
+  textarea {
+    background: rgba(4, 13, 33, 1);
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    outline: none;
+    padding: 12px;
   }
 }
