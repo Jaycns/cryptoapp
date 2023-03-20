@@ -23,13 +23,44 @@
     top: 0;
     z-index: -1;
   }
-  .blur-img {
-    height: 1000px;
-    width: 684px;
+  .left-blur {
+    top: 1632px;
+    height: 900px;
+    width: 584px;
     position: absolute;
+    z-index: -1;
+  }
+  .right-bot {
+    right: 0px;
+    height: 900px;
+    bottom: 747px;
+    width: 454px;
+    position: absolute;
+    z-index: -1;
+  }
+  .right-blur {
+    right: 0px;
+    height: 900px;
+    top: 887px;
+    width: 454px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .left-bot {
+    bottom: 0% !important;
+    height: 900px;
+    width: 584px;
+    position: absolute;
+    z-index: -1;
+  }
+  .blur-img {
     left: 0;
     top: 500px;
     z-index: -1;
+    height: 1000px;
+    width: 684px;
+    position: absolute;
   }
 
   .margin-box {
@@ -46,6 +77,7 @@
         width: 557px;
         height: 388px;
       }
+
       .text {
         display: flex;
         flex-direction: column;

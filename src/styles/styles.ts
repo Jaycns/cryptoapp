@@ -13,8 +13,9 @@ export const TopNav = styled.div`
   .menu {
     display: flex;
     gap: 30px;
-    .menuitem {
-      font-size: 16px;
+    a {
+      text-decoration: none;
+      color: white;
       font-weight: 600;
     }
   }
@@ -49,5 +50,21 @@ export const Button = styled.div`
   p {
     font-size: 14px !important;
     font-weight: 600 !important;
+  }
+`;
+
+export const Header = styled.section`
+  margin-bottom: 96px;
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    form {
+      display: flex;
+      gap: 15px;
+      button {
+        width: fit-content;
+      }
+    }
   }
 `;
