@@ -2,11 +2,15 @@
   #second {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     gap: 80px;
     .info {
       display: flex;
       flex-direction: column;
       gap: 30px;
+      width: 1281px;
     }
   }
   #team {
@@ -37,7 +41,7 @@
           align-items: center;
           padding: 30px;
           gap: 30px;
-         
+
           .text {
             display: flex;
             flex-direction: column;

@@ -4,7 +4,8 @@ import styled from "styled-components";
 export const TopNav = styled.div`
   display: flex;
   margin-top: 12px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 707px;
   align-items: center;
   img {
     height: 43px;
@@ -28,10 +29,14 @@ export const Hero = styled.div`
   padding: 0 40px;
   gap: 65px;
   margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .text {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 622px;
     .btn {
       width: fit-content;
     }
@@ -55,10 +60,14 @@ export const Button = styled.div`
 
 export const Header = styled.section`
   margin-bottom: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 1281px;
     form {
       display: flex;
       gap: 15px;

@@ -1,6 +1,10 @@
 #metrics {
   display: flex;
   flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
   h2 {
     font-weight: 800;
@@ -54,44 +58,52 @@
     }
   }
 }
-
 #carousel {
-  height: 725px;
-  width: 1236px;
-  margin-top: 80px;
-  margin-bottom: 122px;
-  border-radius: 8px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  .clickable {
-    width: 82px;
-    height: 100%;
+  .carousel {
+    height: 725px;
+    width: 1236px;
+    margin-top: 80px;
+    margin-bottom: 122px;
+    border-radius: 8px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.3);
-    img {
-      width: 22px;
-      height: 40px;
+    .clickable {
+      width: 82px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.3);
+      img {
+        width: 22px;
+        height: 40px;
+      }
+    }
+    .main {
+      width: 850px;
+      text-align: center;
+      h2 {
+        font-weight: 800;
+        font-size: 48px;
+      }
+      p {
+        margin-top: 50px;
+      }
     }
   }
-  .main {
-    width: 850px;
-    text-align: center;
-    h2 {
-      font-weight: 800;
-      font-size: 48px;
-    }
-    p {
-      margin-top: 50px;
-    }
+  .margin-gap {
+    margin-bottom: 248px;
   }
-}
-.margin-gap {
-  margin-bottom: 248px;
 }
 #testimony {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h2 {
     margin-bottom: 50px;
     font-weight: 700;
@@ -99,7 +111,6 @@
   }
   .scroller {
     position: relative;
-    width: 100%;
     overflow-x: scroll;
     .card {
       background: #131129;
