@@ -6,62 +6,60 @@
     font-weight: 800;
     font-size: 36px;
   }
-  .flex-box {
+  .card {
+    padding: 37px 58px;
     display: flex;
-    gap: 50px;
-    .card {
-      padding: 37px 58px;
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      background: #131129;
-      border-radius: 10px;
-      width: 380px;
-      .img-con {
-        width: 69px;
-        height: 85px;
-        position: relative;
-        img {
-          position: absolute;
-          width: 129px;
-          height: 165px;
+    align-items: center;
+    gap: 30px;
+    background: #131129;
+    border-radius: 10px;
+    width: 380px;
+    .img-con {
+      width: 69px;
+      height: 85px;
+      position: relative;
+      img {
+        position: absolute;
+        width: 129px;
+        height: 165px;
 
-          top: 0;
-          bottom: 0;
-          left: -50%;
-          right: 0%;
-          margin: auto;
-        }
+        top: 0;
+        bottom: 0;
+        left: -50%;
+        right: 0%;
+        margin: auto;
       }
-      .text {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        h4 {
-          font-weight: 800;
-          font-size: 24px;
-        }
-        h6 {
-          font-weight: 700;
-          font-size: 20px;
-        }
-        .blue {
-          color: #57ccff;
-        }
-        .purple {
-          color: #ba65ff;
-        }
-        .yellow {
-          color: #ffee57;
-        }
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      h4 {
+        font-weight: 800;
+        font-size: 24px;
+      }
+      h6 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+      .blue {
+        color: #57ccff;
+      }
+      .purple {
+        color: #ba65ff;
+      }
+      .yellow {
+        color: #ffee57;
       }
     }
   }
 }
+
 #carousel {
   height: 725px;
   width: 1236px;
   margin-top: 80px;
+  margin-bottom: 122px;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
@@ -86,11 +84,41 @@
       font-size: 48px;
     }
     p {
-      line-height: 28px;
       margin-top: 50px;
     }
   }
 }
 .margin-gap {
   margin-bottom: 248px;
+}
+#testimony {
+  h2 {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .scroller {
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+    .card {
+      background: #131129;
+      border-radius: 10px;
+      width: 522px;
+
+      padding: 32px;
+      display: flex;
+      gap: 27px;
+      .text {
+        width: 326px;
+        p {
+          margin-bottom: 14px;
+        }
+        img {
+          width: 170px;
+          height: 30px;
+        }
+      }
+    }
+  }
 }

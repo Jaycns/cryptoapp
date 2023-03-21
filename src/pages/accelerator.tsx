@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import HeaderBox from "../components/header";
 
 function Accelerator() {
   return (
-    <div>Accelerator</div>
-  )
+    <div className="holder">
+      <HeaderBox title="Accelerator" />
+    </div>
+  );
 }
 
-export default Accelerator
+export default Accelerator;

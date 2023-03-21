@@ -68,3 +68,9 @@ export const Header = styled.section`
     }
   }
 `;
+export const FlexBox = styled.div`
+  display: flex;
+  gap: 50px;
+  position: relative;
+  width: fit-content;
+`;
