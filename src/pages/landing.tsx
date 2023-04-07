@@ -10,6 +10,28 @@ import building from "../images/building.webp";
 import ContactUs from "../components/contactUs";
 import Partners from "../components/partners";
 
+interface myProps {
+  title: string;
+  img: string;
+}
+
+const Block = ({ title, img }: myProps) => {
+  return (
+    <div className="block-1">
+      <img src={img} className="hats" alt="topimg" />
+      <h3>{title}</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+        possimus. Natus accusamus non blanditiis a laudantium consectetur
+        consequuntur! Nam, vero?
+      </p>
+      <Button className="btn">
+        <p>Read More Detail</p>
+      </Button>
+    </div>
+  );
+};
+
 const Landing = () => {
   //   const colNum: string = "10";
   //   const rollNum: string = "20";
@@ -67,54 +89,10 @@ const Landing = () => {
           Our <span>Vertical</span>
         </h1>
         <div className="flex-box">
-          <div className="block-1">
-            <img src={hat} className="hats" alt="topimg" />
-            <h3>Education</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis, possimus. Natus accusamus non blanditiis a
-              laudantium consectetur consequuntur! Nam, vero?
-            </p>
-            <Button className="btn">
-              <p>Read More Detail</p>
-            </Button>
-          </div>
-          <div className="block-1">
-            <img src={building} className="hats" alt="topimg" />
-            <h3>Governance</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis, possimus. Natus accusamus non blanditiis a
-              laudantium consectetur consequuntur! Nam, vero?
-            </p>
-            <Button className="btn">
-              <p>Read More Detail</p>
-            </Button>
-          </div>
-          <div className="block-1">
-            <img src={hat} className="hats" alt="topimg" />
-            <h3>Education</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis, possimus. Natus accusamus non blanditiis a
-              laudantium consectetur consequuntur! Nam, vero?
-            </p>
-            <Button className="btn">
-              <p>Read More Detail</p>
-            </Button>
-          </div>
-          <div className="block-1">
-            <img src={building} className="hats" alt="topimg" />
-            <h3>Governance</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis, possimus. Natus accusamus non blanditiis a
-              laudantium consectetur consequuntur! Nam, vero?
-            </p>
-            <Button className="btn">
-              <p>Read More Detail</p>
-            </Button>
-          </div>
+          <Block title="Education" img={hat} />
+          <Block title="Governance" img={building} />
+          <Block title="Education" img={hat} />
+          <Block title="Governance" img={building} />
         </div>
       </section>
       <Partners />

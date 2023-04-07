@@ -11,6 +11,41 @@ import Partners from "../components/partners";
 import ContactUs from "../components/contactUs";
 import HeaderBox from "../components/header";
 
+interface myProps {
+  num: string;
+  img: string;
+  name: string;
+  color: string;
+}
+const Card = ({ num, name, img, color }: myProps) => {
+  return (
+    <div className="card">
+      <div className="img-con">
+        <img src={img} alt="building" />
+      </div>{" "}
+      <div className="text">
+        <h6>{num}</h6>
+        <h4 className={color}>{name}</h4>
+      </div>
+    </div>
+  );
+};
+const ScrollCard = () => {
+  return (
+    <div className="card">
+      <img src={death} className="dp" alt="dp" />
+      <div className="text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation
+        </p>
+        <img src={stars} alt="stars" />
+      </div>
+    </div>
+  );
+};
+
 function Webatl() {
   return (
     <div className="holder">
@@ -19,33 +54,14 @@ function Webatl() {
         <h2>Success Metrices</h2>
         <div className="scroller">
           <FlexBox>
-            <div className="card">
-              <div className="img-con">
-                <img src={building} alt="building" />
-              </div>{" "}
-              <div className="text">
-                <h6>500 +</h6>
-                <h4 className="blue">Attendances</h4>
-              </div>
-            </div>
-            <div className="card">
-              <div className="img-con">
-                <img src={building} alt="building" />
-              </div>{" "}
-              <div className="text">
-                <h6>11 +</h6>
-                <h4 className="purple">Universities</h4>
-              </div>
-            </div>
-            <div className="card">
-              <div className="img-con">
-                <img src={building} alt="building" />
-              </div>
-              <div className="text">
-                <h6>$10,000</h6>
-                <h4 className="yellow">Prizes</h4>
-              </div>
-            </div>
+            <Card num="500 +" name="Attendances" img={building} color="blue" />
+            <Card
+              num="11 +"
+              name="Universities"
+              img={building}
+              color="purple"
+            />
+            <Card num="$10,000" name="Prizes" img={building} color="yellow" />
           </FlexBox>
         </div>
       </section>
@@ -78,39 +94,10 @@ function Webatl() {
         <h2>Testimonials</h2>
         <div className="scroller">
           <FlexBox>
-            <div className="card">
-              <img src={death} className="dp" alt="dp" />
-              <div className="text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-                <img src={stars} alt="stars" />
-              </div>
-            </div>
-            <div className="card">
-              <img src={death} className="dp" alt="dp" />
-              <div className="text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-                <img src={stars} alt="stars" />
-              </div>
-            </div>
-            <div className="card">
-              <img src={death} className="dp" alt="dp" />
-              <div className="text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-                <img src={stars} alt="stars" />
-              </div>
-            </div>
+            <ScrollCard />
+            <ScrollCard />
+            <ScrollCard />
+            <ScrollCard />
           </FlexBox>
         </div>
       </section>
