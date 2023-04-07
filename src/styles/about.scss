@@ -4,13 +4,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 100%;
     gap: 80px;
     .info {
       display: flex;
       flex-direction: column;
       gap: 30px;
-      width: 1281px;
     }
   }
   #team {

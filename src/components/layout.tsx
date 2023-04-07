@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/landing.scss";
 import bg from "../images/bg.webp";
-import group6 from "../images/Group 6.webp";
 import group5 from "../images/Group 5.webp";
 import left from "../images/left.webp";
 import leftBot from "../images/left bot.webp";
@@ -19,12 +18,14 @@ function Layout({ children }: any) {
       <img src={right} className="right-blur" alt="bg" />
       <img src={leftBot} className="left-bot" alt="bg" />
       <img src={rightBot} className="right-bot" alt="bg" />
-      <div className="margin-box">
-        <TopBar />
-        <main>{children}</main>
-        <footer>
+      <div className="big-flex">
+        <div className="margin-box">
           <TopBar />
-        </footer>
+          <main>{children}</main>
+          <footer>
+            <TopBar />
+          </footer>
+        </div>
       </div>
     </div>
   );

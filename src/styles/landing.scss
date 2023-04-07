@@ -1,5 +1,7 @@
 .container {
   position: relative;
+  overflow: hidden;
+
   .bg {
     position: absolute;
     top: 0;
@@ -62,9 +64,18 @@
     width: 684px;
     position: absolute;
   }
-
+  .big-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .margin-box {
-    padding: 50px 60px;
+    padding: 50px 0px;
+    width: 1320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   #header {
     position: relative;
@@ -73,7 +84,7 @@
     justify-content: center;
     align-items: center;
     main {
-      margin: 113px 40px;
+      margin: 113px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -87,7 +98,6 @@
         flex-direction: column;
         gap: 15px;
         .p {
-          width: 444px;
           line-height: 24px;
         }
         form {
@@ -216,4 +226,5 @@
 }
 footer {
   margin-top: 100px;
+  width: 100%;
 }
