@@ -14,7 +14,7 @@ interface myProps {
   title: string;
   img: string;
 }
-
+const phSize = window.matchMedia("(max-width: 768px)").matches;
 const Block = ({ title, img }: myProps) => {
   return (
     <div className="block-1">
@@ -27,6 +27,7 @@ const Block = ({ title, img }: myProps) => {
       </p>
       <Button className="btn">
         <p>Read More Detail</p>
+        {phSize && <FaLongArrowAltRight />}
       </Button>
     </div>
   );
@@ -35,7 +36,7 @@ const Block = ({ title, img }: myProps) => {
 const Landing = () => {
   //   const colNum: string = "10";
   //   const rollNum: string = "20";
-  const phSize = window.matchMedia("(max-width: 768px)").matches;
+
   return (
     <div className="container">
       <section id="header">
