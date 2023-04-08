@@ -7,6 +7,7 @@ import leftBot from "../images/left bot.webp";
 import right from "../images/right.webp";
 import rightBot from "../images/right bot.webp";
 import TopBar from "../components/topbar";
+import Sidebar from "./sidebar";
 
 function Layout({ children }: any) {
   return (
@@ -21,6 +22,7 @@ function Layout({ children }: any) {
       <div className="big-flex">
         <div className="margin-box">
           <TopBar />
+          <Sidebar />
           <main>{children}</main>
           <footer>
             <TopBar />

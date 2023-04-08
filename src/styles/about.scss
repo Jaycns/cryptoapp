@@ -10,6 +10,9 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
+      @media (max-width: 767px) {
+        width: 320px;
+      }
     }
   }
   #team {
@@ -24,6 +27,9 @@
       display: flex;
       align-items: center;
       gap: 58px;
+      @media (max-width: 767px) {
+        gap: 20px;
+      }
       .icon {
         width: 15px;
         height: 27px;
@@ -31,10 +37,11 @@
       .card-holder {
         display: flex;
         gap: 50px;
+        position: relative;
+
         .card {
           background: #131129;
           border-radius: 10px;
-
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -56,6 +63,7 @@
               font-size: 20px;
             }
           }
+
           .socials {
             display: flex;
             gap: 15px;
@@ -64,6 +72,23 @@
               height: 30px;
             }
           }
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+          .card {
+            padding: 30px 60px;
+            .text {
+              text-align: center;
+            }
+          }
+        }
+      }
+      @media (max-width: 767px) {
+        .card-scroll {
+          width: 240px;
+          display: flex;
+          justify-content: center;
+          overflow: scroll;
         }
       }
     }

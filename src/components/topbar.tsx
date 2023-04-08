@@ -1,18 +1,36 @@
-import React from "react";
+import React, { useContext } from "react";
 import { TopNav } from "../styles/styles";
 import logo from "../images/Logo.webp";
 import { Link } from "react-router-dom";
+import AppContext from "../context/context";
 
 function TopBar() {
   // const menu: string[] = useMemo(
   //   () => ["About Us", "WebATL", "Accelerator", "Blog", "Contact"],
   //   []
   // );
+  const {
+    navDark,
+    navActive,
+    handleMenu,
+    hamburger,
+    menu,
+    handleClick,
+    topOn,
+  } = useContext(AppContext);
   return (
     <TopNav>
       <Link to="/">
         <img src={logo} alt="logo" />
       </Link>
+      <div
+        className={`hamburger ${hamburger ? "active" : ""}`}
+        onClick={handleMenu}
+      >
+        <span className="line1"></span>
+        <span className="line2"></span>
+        <span className="line3"></span>
+      </div>
       <div className="menu">
         <Link to="about-us" className="menuitem">
           About us
