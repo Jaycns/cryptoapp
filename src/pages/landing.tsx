@@ -6,7 +6,7 @@ import group6 from "../images/Group 6.webp";
 
 import hat from "../images/hats.webp";
 import building from "../images/building.webp";
-
+import { FaLongArrowAltRight } from "react-icons/fa";
 import ContactUs from "../components/contactUs";
 import Partners from "../components/partners";
 
@@ -35,12 +35,15 @@ const Block = ({ title, img }: myProps) => {
 const Landing = () => {
   //   const colNum: string = "10";
   //   const rollNum: string = "20";
+  const phSize = window.matchMedia("(max-width: 768px)").matches;
   return (
     <div className="container">
       <section id="header">
         <main>
           <div className="text">
-            <h1>Build Inform Advance</h1>
+            <div className="scroll">
+              <h1>Build Inform Advance</h1>
+            </div>
             <p className="p">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Reprehenderit inventore omnis nisi excepturi id debitis
@@ -49,6 +52,7 @@ const Landing = () => {
             <form>
               <Button>
                 <p>Apply For Accelerator</p>
+                {phSize && <FaLongArrowAltRight />}
               </Button>
               <div className="input-box">
                 <input type="text" />

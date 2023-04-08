@@ -21,6 +21,15 @@ export const TopNav = styled.div`
       font-weight: 600;
     }
   }
+  @media (max-width: 768px) {
+    img {
+      width: 72px;
+      height: 24px;
+    }
+    .menu {
+      display: none;
+    }
+  }
 `;
 
 export const Hero = styled.div`
@@ -34,6 +43,10 @@ export const Hero = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-top: 30px;
+  }
   .text {
     display: flex;
     flex-direction: column;
@@ -52,6 +65,9 @@ export const Button = styled.div`
   box-shadow: 0px 17px 33px rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   p {
     font-size: 14px !important;

@@ -51,6 +51,10 @@ a {
 .circuit {
   width: 553px;
   height: 414px;
+  @media (max-width: 767px) {
+    width: 320px;
+    height: 260px;
+  }
 }
 .input-box {
   background: linear-gradient(92.32deg, #1f8ebe 0%, #ae61ed 99.4%);
