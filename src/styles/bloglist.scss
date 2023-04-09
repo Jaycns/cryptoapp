@@ -5,6 +5,9 @@
   row-gap: 40px;
   align-items: center;
   width: 100%;
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
   .page-card {
     position: relative;
     overflow: hidden;
@@ -13,6 +16,9 @@
     z-index: 99;
     display: flex;
     align-items: flex-end;
+    @media (max-width: 767px) {
+      width: 320px;
+    }
     .bg {
       width: 583.08px;
       height: 345px;
@@ -37,6 +43,16 @@
         font-weight: 700;
         font-size: 14px;
         color: #bcbcbc;
+      }
+      @media (max-width: 767px) {
+        height: 130px;
+        h3 {
+          font-size: 18px;
+        }
+
+        .p {
+          text-align: right;
+        }
       }
       .num {
         display: flex;

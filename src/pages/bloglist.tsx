@@ -19,7 +19,7 @@ const PageCard = () => {
         </div>
         <p>April,2023</p>
 
-        <p>Authored by John</p>
+        <p className="p">Authored by John</p>
       </div>
     </div>
   );

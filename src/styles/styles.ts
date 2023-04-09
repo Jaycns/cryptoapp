@@ -123,6 +123,7 @@ export const Button = styled.div`
   p {
     font-size: 14px !important;
     font-weight: 600 !important;
+    color: #fff !important;
   }
 `;
 

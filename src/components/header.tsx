@@ -25,10 +25,12 @@ function HeaderBox({ title }: compProps) {
             <p>Try Web3ATL Now</p>
             {phSize && <FaLongArrowAltRight />}
           </Button>
-          <Button>
-            <p>Try Web3ATL Now</p>
-            {phSize && <FaLongArrowAltRight />}
-          </Button>
+          {!phSize && (
+            <Button>
+              <p>Try Web3ATL Now</p>
+              {phSize && <FaLongArrowAltRight />}
+            </Button>
+          )}
         </form>
       </main>
     </Header>
