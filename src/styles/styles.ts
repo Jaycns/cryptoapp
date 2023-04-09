@@ -153,6 +153,9 @@ export const FlexBox = styled.div`
   gap: 50px;
   position: relative;
   width: fit-content;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const SideBar = styled.div`

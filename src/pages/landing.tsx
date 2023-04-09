@@ -14,7 +14,7 @@ interface myProps {
   title: string;
   img: string;
 }
-const phSize = window.matchMedia("(max-width: 768px)").matches;
+export const phSize = window.matchMedia("(max-width: 768px)").matches;
 const Block = ({ title, img }: myProps) => {
   return (
     <div className="block-1">

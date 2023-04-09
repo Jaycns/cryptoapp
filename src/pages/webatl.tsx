@@ -51,7 +51,9 @@ function Webatl() {
     <div className="holder">
       <HeaderBox title="Web3ATL" />
       <section id="metrics">
-        <h2>Success Metrices</h2>
+        <h1>
+          Success <span>Metrices</span>
+        </h1>
         <div className="scroller">
           <FlexBox>
             <Card num="500 +" name="Attendances" img={building} color="blue" />

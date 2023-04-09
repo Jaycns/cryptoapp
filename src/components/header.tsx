@@ -1,5 +1,7 @@
 import React from "react";
-import { Button, Header, FlexBox } from "../styles/styles";
+import { Button, Header } from "../styles/styles";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { phSize } from "../pages/landing";
 
 interface compProps {
   title: string;
@@ -21,9 +23,11 @@ function HeaderBox({ title }: compProps) {
         <form>
           <Button>
             <p>Try Web3ATL Now</p>
+            {phSize && <FaLongArrowAltRight />}
           </Button>
           <Button>
             <p>Try Web3ATL Now</p>
+            {phSize && <FaLongArrowAltRight />}
           </Button>
         </form>
       </main>
