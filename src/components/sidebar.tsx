@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { SideBar, Blur } from "../styles/styles";
 
 function Sidebar() {
-  const { menu, navActive, handleClick, navDark } = useContext(AppContext);
+  const { menu, navActive, handleClick } = useContext(AppContext);
   return (
     <>
       <SideBar className={menu ? "" : "sidebar"}>

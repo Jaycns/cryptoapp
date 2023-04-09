@@ -5,18 +5,9 @@ import { Link } from "react-router-dom";
 import AppContext from "../context/context";
 
 function TopBar() {
-  // const menu: string[] = useMemo(
-  //   () => ["About Us", "WebATL", "Accelerator", "Blog", "Contact"],
-  //   []
-  // );
   const {
-    navDark,
-    navActive,
     handleMenu,
     hamburger,
-    menu,
-    handleClick,
-    topOn,
   } = useContext(AppContext);
   return (
     <TopNav>

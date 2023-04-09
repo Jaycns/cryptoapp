@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/about.scss";
-import { Button, Header } from "../styles/styles";
 import Card from "../components/card";
 import ContactUs from "../components/contactUs";
 import HeaderBox from "../components/header";
